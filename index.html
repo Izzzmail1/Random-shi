@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .foot1{
+            background-color: #253828;
+            width: 100%;
+            height: 200px;
+           display: flex;
+           align-items: center;
+           flex-direction: column;
+           line-height: 4px;
+           
+           
+        }
+        .foot7 {
+           background-color:#f5f0e6;
+            width: 100%;
+            height: 650px;
+            display: flex;
+            margin-bottom: 40px;
+            flex-direction: column;
+           
+           
+        }
+        
+           
+        
+        .foot1 p{
+            color: orange;
+            font-family: sans-serif;
+            font-size: 15px;
+           
+            
+        }
+        .foot1 h1{
+            color: white;
+            font-size: 45px;
+            margin-top: 80px;
+        }
+        
+    
+        body{
+            margin: 0;
+            
+            
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 19px;
+            margin-left: 65px;
+            padding-left: 30px;
+            
+            
+
+        }
+        
+        
+        
+        .foot7 h1{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .foot6{
+            background-color: #f7f3ed;
+            width: 100%;
+            height: 300px;
+           display: flex;
+           align-items: center;
+           flex-direction: column;
+           line-height: 0;
+           margin-bottom: 0;
+           
+             
+            
+
+        }
+        .foot6 p{
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 35px;
+            font-size: 15px;
+            line-height: 15px;
+
+        }
+        .foot6 p, h1{
+            color: rgb(42, 22, 0);
+            margin-top: 70px;
+            display: flex;
+            
+            
+            
+            
+        }
+        .foot6 h1{
+            font-size: 45px;
+            margin-bottom: 30px;
+            
+        }
+        .cards p{
+            font-family: sans-serif;
+            
+            
+            
+        }
+        .card1:hover{
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+        .card2:hover{
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+        .card3:hover{
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+        .card4:hover{
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+        .card5:hover{
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+        .card6:hover{
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        
+        
+        .card1, .card4{
+            margin-left: 80px;
+        }
+        .card3, .card6{
+            margin-right: 890px;
+        }
+        .card1{
+            background-color: #fbf9f4;
+            height: 220px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            
+
+        }
+        .card2{
+            background-color: #fbf9f4;
+            height: 220px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card3{
+            background-color: #fbf9f4;
+            height: 220px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card4{
+            background-color: #fbf9f4;
+            height: 220px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card5{
+            background-color: #fbf9f4;
+            height: 220px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card6{
+            background-color: #fbf9f4;
+            height: 220px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .price{
+            
+            color: orange;
+        }
+        .sent{
+            color: rgb(75, 29, 0);
+            font-size: 15px;
+
+        }
+        .foot2{
+            background-color: #f7f3ed;
+            width: 100%;
+            height: 500px;
+           
+        }
+        .boxes{
+            display: grid;
+           grid-template-columns: 1fr 1fr 1fr 1fr;
+           grid-template-rows: 3, 220px;
+           gap: 15px;
+           margin-left: 120px;
+           
+    
+        }
+        .box1{
+            grid-column: 1/2;
+            grid-row:1/3 ;
+            background-color: #4a3525;
+            height: 310px;
+            width: 530px;
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; 
+            align-items: flex-start;   
+            
+        }
+        .box2{
+            grid-column: 2/3;
+            grid-row: 1/2;
+            background-color: #a6734d;
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; 
+            align-items: flex-start;   
+            
+            
+        }
+        .box3{
+            grid-column: 3/4;
+            grid-row: 1/2;
+            background-color: #b87d4b;
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; 
+            align-items: flex-start;   
+            
+        }
+        .box4{
+            grid-column: 2/3;
+            grid-row: 2/3;
+            background-color: #34493e;
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; 
+            align-items: flex-start;   
+            
+        }
+        .box5{
+            grid-column: 3/4;
+            grid-row: 2/3;
+            background-color: #7c624d;
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; 
+            align-items: flex-start;   
+            
+        }
+        .boxes h3{
+            color: white;
+            font-size: small;
+        }
+        .box1, .box2, .box3, .box4, .box5 h1{
+            padding-top: 8px;
+        }
+        .foot2 h2{
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+            
+        }
+        .sec3{
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+
+    </style>
+    <section class="sec1">
+        <div>
+            <footer class="foot1">
+                <h1>Northbound Coffee Roasters</h1>
+                <p >Small-batch beans, roasted every Tuesday</p>
+             </footer>
+            <footer class="foot6">
+                <h1>Roasted close to home</h1>
+                <p>We roast in small batches out of a converted garage, a few pounds at a time, so <br> every bag is only a few days old when it reaches you. No long supply chains, no <br> mystery blends.</p>
+            </footer>
+        </div>
+    </section>
+    <section class="sec2">
+        <footer class="foot7">
+        <div>
+            <h1 >On the menu</h1>
+        </div>
+        <div class="cards">
+            <div class="card1">
+                <p class="emo">☕</p>
+                <h2 >House Filter</h2>
+                <p class="sent" >Rotating single-origin, brewed by the cup</p>
+                <p class="price">$4.50</p>
+            </div>
+            <div class="card2">
+                <p class="emo">🥛</p>
+                <h2>Flat White</h2>
+                <p class="sent">Double shot, steamed milk</p>
+                <p class="price">$4.75</p>
+            </div>
+            <div class="card3">
+                <p class="emo">🧊</p>
+                <h2>Cold Brew</h2>
+                <p class="sent">Steeped 18 hours, served over ice</p>
+                <p class="price">$5.00</p>
+            </div>
+            <div class="card4">
+                <p class="emo">🍫</p>
+                <h2>Mocha</h2>
+                <p class="sent">Espresso, steamed milk, dark chocolate</p>
+                <p class="price">$5.25</p>
+            </div>
+            <div class="card5">
+                <p class="emo">🌿</p>
+                <h2>Matcha Latte</h2>
+                <p class="sent">Ceremonial grade, steamed milk</p>
+                <p class="price">$5.00</p>
+            </div>
+            <div class="card6">
+                <p class="emo">🍮</p>
+                <h2>Caramel Macchiato</h2>
+                <p class="sent">Vanilla, espresso, caramel drizzle</p>
+                <p class="price">$5.50</p>
+            </div>
+        </div>
+         </footer>
+    </section>
+    
+    <section class="sec3">
+        <footer class="foot2">
+            <h2>Inside the shop</h2>
+            <div class="boxes">
+                <div class="box1">
+                    <h3>Roasting room</h3>
+                </div>
+                <div class="box2">
+                    <h3>Bean wall</h3>
+                </div>
+                <div class="box3">
+                    <h3>Pour-over bar</h3>
+                </div>
+                <div class="box4">
+                    <h3>Front counter</h3>
+                </div>
+                <div class="box5">
+                    <h3>Corner seating</h3>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <section class="sec4">
+        <footer class="foot3">
+            <h1>What people say</h1>
+            <div class="boxx1">
+            <p class="boxsnt">"Best filter coffee in the neighborhood, and it changes every week."</p>
+            <p class="bxnam">— Aida, regular since 2023</p>
+            </div>
+            <div class="boxx2">
+                <p class="boxsnt">"The cold brew is dangerously easy to finish before I even sit down."</p>
+                <p class="bxnam">— Marat</p>
+            </div>
+            <div class="boxx3">
+                <p class="boxsnt">"Small space, but it never feels rushed. Good spot to work from."</p>
+                <p class="bxnam">— Dina</p>
+            </div>
+        </footer>
+    </section>
+    <section class="sec4">
+        <footer class="foot4">
+            <h1>Visit us</h1>
+            <tr >
+                <td>Tuesday – Friday</td>
+                <td>7am – 3pm</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>8am – 4pm</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>8am – 2pm</td>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>Closed (roasting day)</td>
+            </tr>
+            <div class="onright">
+                <p>12 Birch Lane — two blocks north of the old mill</p>
+            </div>
+            
+        </footer>
+    </section>
+    <footer class="foot5">
+        <p>Northbound Coffee Roasters — open Tuesday to Sunday</p>
+    </footer>
+</body>
+</html>
